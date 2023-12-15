@@ -38,9 +38,18 @@
                 font-size: 3.5rem;
             }
         }
-        .kkk{
-            display: flex;
-            flex-direction: column;
+
+        .form-group {
+            margin-bottom: 20px; /* Adjust this value as needed */
+        }
+
+        /* Increase spacing after the heading */
+        h2 {
+            margin-bottom: 30px; /* Adjust this value as needed */
+        }
+        .form-label {
+            display: block;
+            text-align: left;
         }
     </style>
 </head>
@@ -65,36 +74,34 @@
 
         <form class="row g-3" action="addok" method="post">
             <div class="main">
-                <div class="kkk">
-                    <div>
-                        <label for="inputEmail4" class="form-label">Student</label>
-                        <input type="email" name="student" class="form-control" id="inputEmail4">
-                    </div>
-                    <div>
-                        <label for="inputPassword4" class="form-label">Student Number</label>
-                        <input type="password" name="studentNumber" class="form-control" id="inputPassword4">
-                    </div>
+                <div class="col-md-6 offset-md-3 form-group">
+                    <label for="inputEmail4" class="form-label">Student</label>
+                    <input type="email" name="student" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6 offset-md-3 form-group">
+                    <label for="inputPassword4" class="form-label">Student Number</label>
+                    <input type="password" name="studentNumber" class="form-control" id="inputPassword4">
                 </div>
 
-                <div class="col-12">
+                <div class="col-md-6 offset-md-3 form-group">
                     <label for="inputAddress" class="form-label">School</label>
                     <input type="text" name="school" class="form-control" id="inputAddress" placeholder="OO고등학교">
                 </div>
-                <div class="col-12">
+                <div class="col-md-6 offset-md-3 form-group">
                     <label for="inputAddress2" class="form-label">School Number</label>
                     <input type="text" name="schoolNumber" class="form-control" id="inputAddress2" placeholder="OOO-OOO-OOOO">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 offset-md-3 form-group">
                     <label for="inputCity" class="form-label">location</label>
                     <input type="text" name="location" class="form-control" id="inputCity">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 offset-md-3 form-group">
                     <label for="inputZip" class="form-label">Subsidy</label>
                     <input type="text" class="form-control" name="subsidy" id="inputZip">
                 </div>
-                <div class="col-12">
-                    <input type="button" value="취소" onclick="history.back()">
+                <div class="col-md-6 offset-md-3 form-group">
                     <button type="submit" class="btn btn-primary">Apply</button>
+                    <input type="button" class="btn btn-secondary" value="Cancel" onclick="history.back()">
                 </div>
             </div>
 
