@@ -20,23 +20,24 @@ public class LoginController {
     @RequestMapping(value="/loginOk", method=RequestMethod.POST)
     public String loginCheck(HttpSession session, UserVO vo){
         String returnURL = "";
-        if (session.getAttribute("login") != null ){
-            session.removeAttribute("login");
-        }
+    if (session.getAttribute("login") != null ){
+        session.removeAttribute("login");
+    }
 
-        UserVO loginvo = service.getUser(vo);
-        if ( loginvo != null ) {
-            System.out.println("로그인성공!");
-            session.setAttribute("login", loginvo);
-            returnURL = "redirect:/board/list";
-        }else {
-            System.out.println("로그인실패!");
-            returnURL = "redirect:/login/login";
-        }
-        return returnURL;    }
+    UserVO loginvo = service.getUser(vo);
+    if ( loginvo != null ) {
+        System.out.println("로그인성공!");
+        session.setAttribute("login", loginvo);
+        returnURL = "redirect:/board/list";
+    }else {
+        System.out.println("로그인실패!");
+        returnURL = "redirect:/login/login";
+    }
+    return returnURL;    }
 
     @RequestMapping(value="/logout")
     public String logout(HttpSession session) {
-        session.invalidate(); return"redirect:/login/login";
+        session.invalidate();
+        return "redirect:/login/login";
     }
 }
