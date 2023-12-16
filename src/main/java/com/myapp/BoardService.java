@@ -1,4 +1,4 @@
-package com.myapp;
+package com.myapp.board;
 
 import java.util.List;
 public interface BoardService {
