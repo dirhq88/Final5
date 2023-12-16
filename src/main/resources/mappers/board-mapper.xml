@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Board">
+    <insert id="insertBoard">
+        insert into SchoolBoard (student, studentNumber, school, schoolNumber, location, subsidy)
+        values
+            (#{student} , #{studentNumber} , #{school} , #{schoolNumber}, #{location}, #{subsidy});
+    </insert>
+    <update id="updateBoard">
+        update SchoolBoard
+        set student=#{student}, studentNumber=#{studentNumber}, school=#{school}, schoolNumber=#{schoolNumber}, location=#{location}, subsidy=#{subsidy}
+        where id=#{id};
+    </update>
+    <delete id="deleteBoard">
+        delete from SchoolBoard  where id = #{id};
+    </delete>
+    <select id="getBoard" resultType="board">
+        select * from SchoolBoard where id=#{id};
+    </select>
+    <select id="getBoardList" resultType="board">
+        select * from SchoolBoard order by applyDate desc;
+    </select>
+</mapper>
