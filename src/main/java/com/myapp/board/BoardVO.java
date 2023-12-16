@@ -60,4 +60,4 @@ public class BoardVO {
     public void setApplyDate(Date applyDate) {
         this.applyDate = applyDate;
     }
-}
+    }
