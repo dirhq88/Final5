@@ -16,7 +16,6 @@
     <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
     <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#7952b3">
-    <link href="cover.css" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -51,7 +50,7 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
         <div>
-            <h3 class="float-md-start mb-0">NANUMI</h3>
+            <h3 class="float-md-start mb-0">모교방문단</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
                 <%--  <a class="nav-link active" aria-current="page" href="#">Home</a>
                                 <a class="nav-link" href="#">Features</a>

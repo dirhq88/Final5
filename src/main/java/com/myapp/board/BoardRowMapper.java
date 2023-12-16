@@ -1,4 +1,4 @@
-package com.myapp;
+package com.myapp.board;
 
 import org.springframework.jdbc.core.RowMapper;
 

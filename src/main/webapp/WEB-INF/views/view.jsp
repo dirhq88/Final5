@@ -24,7 +24,6 @@
     <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
     <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#7952b3">
-    <link href="cover.css" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -91,10 +90,8 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
         <div>
-            <h3 class="float-md-start mb-0">NANUMI</h3>
+            <h3 class="float-md-start mb-0">모교방문단</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link active" aria-current="page" href="../../add">Apply</a>
-                <a class="nav-link" href="#">Logout</a>
                 <%--  <a class="nav-link active" aria-current="page" href="#">Home</a>
                                 <a class="nav-link" href="#">Features</a>
                                 <a class="nav-link" href="#">Contact</a>--%>
@@ -116,7 +113,6 @@
                         <tr><td>Subsidy</td><td><form:input path="subsidy"  class="form-control dark-form-input" disabled="true"/></td></tr>
                         <tr><td>Apply Date</td><td><form:input path="applyDate" class="form-control dark-form-input" disabled="true"/></td></tr>
                     </table>
-                    <input type="submit" value="Edit" class="btn btn-primary">
                     <input type="button" value="Cancel" onclick="history.back()" class="btn btn-secondary">
                 </form:form>
             </div>

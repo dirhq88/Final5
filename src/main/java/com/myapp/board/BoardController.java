@@ -1,4 +1,4 @@
-package com.myapp;
+package com.myapp.board;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-
 @RequestMapping(value="/")
 public class BoardController {
     @Autowired
@@ -16,7 +15,7 @@ public class BoardController {
 
     @RequestMapping("/")
     public String home(){
-        return "index";
+        return "redirect:login/login";
     }
 
     @RequestMapping(value ="/board/list", method = RequestMethod.GET)
@@ -32,7 +31,8 @@ public class BoardController {
 
     @RequestMapping(value ="/board/addok", method = RequestMethod.POST)
     public String addPostOk(BoardVO vo){
-        return "redirect:list";
+        boardService.insertBoard(vo);
+        return "redirect:/board/list";
     }
 
     @RequestMapping(value = "/board/editform/{id}", method = RequestMethod.GET)
@@ -51,11 +51,13 @@ public class BoardController {
 
     @RequestMapping(value = "/board/editok", method = RequestMethod.POST)
     public String editPostOk(BoardVO vo){
+        boardService.updateBoard(vo);
         return "redirect:list";
     }
 
     @RequestMapping(value = "/board/deleteok/{id}", method = RequestMethod.GET)
     public String deletePostOk(@PathVariable("id") int id){
+        boardService.deleteBoard(id);
         return "redirect:../list";
     }
 }

@@ -59,9 +59,8 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
         <div>
-            <h3 class="float-md-start mb-0">NANUMI</h3>
+            <h3 class="float-md-start mb-0">모교방문단</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link" href="#">Logout</a>
                 <%--  <a class="nav-link active" aria-current="page" href="#">Home</a>
                                 <a class="nav-link" href="#">Features</a>
                                 <a class="nav-link" href="#">Contact</a>--%>
@@ -76,7 +75,7 @@
             <div class="main">
                 <div class="col-md-6 offset-md-3 form-group">
                     <label for="inputEmail4" class="form-label">Student</label>
-                    <input type="email" name="student" class="form-control" id="inputEmail4">
+                    <input type="text" name="student" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-md-6 offset-md-3 form-group">
                     <label for="inputPassword4" class="form-label">Student Number</label>
