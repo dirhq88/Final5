@@ -58,7 +58,8 @@
             <h3 class="float-md-start mb-0">모교방문단</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
                 <a class="nav-link active" aria-current="page" href="./add">Apply</a>
-                <%--<a class="nav-link" href="#">Contact</a>--%>
+                <a class="nav-link" aria-current="page" href="/project5_final_war_exploded/login/logout">Logout</a>
+
             </nav>
         </div>
     </header>
