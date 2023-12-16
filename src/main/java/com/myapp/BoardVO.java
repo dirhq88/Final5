@@ -1,4 +1,4 @@
-package com.myapp;
+package com.myapp.board;
 
 import java.util.Date;
 
@@ -60,4 +60,4 @@ public class BoardVO {
     public void setApplyDate(Date applyDate) {
         this.applyDate = applyDate;
     }
-}
+    }
