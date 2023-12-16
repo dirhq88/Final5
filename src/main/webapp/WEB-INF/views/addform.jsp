@@ -23,7 +23,6 @@
     <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
     <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#7952b3">
-    <link href="cover.css" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
